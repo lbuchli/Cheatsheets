@@ -9,7 +9,9 @@
       let
         pkgs = import nixpkgs { inherit system; };
         typstWithDeps = pkgs.typst.withPackages (ps: with ps; [
-          cetz_0_3_4
+          cetz_0_4_2
+          cetz-plot_0_1_3
+          oxifmt_0_2_1
           fletcher_0_5_8
         ]);
       in
